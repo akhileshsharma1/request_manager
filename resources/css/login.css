@@ -1,0 +1,34 @@
+body {
+    background-image: url('/images/deerwalk.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+body::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Black overlay with 50% opacity */
+    z-index: -1; /* Pushes it behind other elements */
+}
+
+.login-form {
+    background-color: rgba(255, 255, 255, 0.9); /* Adjust opacity here */
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    position: relative;
+    z-index: 1;
+}
+
+.login-form h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
